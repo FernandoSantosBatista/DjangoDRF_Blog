@@ -19,7 +19,7 @@ class Article(models.Model):
 
     def get_image(self):
         if self.image:
-            return 'http://127.0.0.1:8000' + self.image.url
+            return 'https://vue-blog-backend.herokuapp.com' + self.image.url
         return ''
 
 
